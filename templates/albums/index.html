@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="content">
+	{% for album in albums %} <!-- check: works!!!-->
+	<div class="album-details">
+		<a href="/albums/{{album.id}}"><h2>{{ album.title }}</h2></a>
+
+		<li>{{ album.artist.name }} - {{ album.year }}</li>
+
+	</div>
+	{% endfor %}
+</section>
+{% endblock %}

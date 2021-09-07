@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2> {{ album.title }}</h2>
+
+    <li>{{ album.artist.name}} - {{ album.year }}</li>
+    <li>Stock - {{ album.stock_level }}</li>
+    
+    </div>
+{% endblock content %}
